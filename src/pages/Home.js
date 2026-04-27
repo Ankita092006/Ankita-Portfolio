@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../assets/Whatsapp Image 2026-04-25 at 6.16.13 PM.jpg";
+import profile from "../assets/profile.jpeg";
 function Home() {
   return (
     <div style={{ textAlign: "center", marginTop: "100px" }}>
