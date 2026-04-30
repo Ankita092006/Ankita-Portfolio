@@ -1,10 +1,12 @@
-/* Reset some default styles */
+/* Reset default spacing */
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #e3f2fd;
 }
 
-/* Navbar styling */
+/* Navbar */
 nav {
   background-color: #000;
   padding: 15px;
@@ -23,24 +25,35 @@ nav a:hover {
 }
 
 /* Page container */
-div {
+.container {
   text-align: center;
+  padding: 40px 20px;
 }
 
 /* Headings */
 h1 {
-  font-size: 40px;
-  margin-top: 20px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 h2 {
   margin-top: 30px;
 }
 
-/* Paragraph */
 p {
   font-size: 18px;
   color: #333;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
 
 /* Buttons */
@@ -58,30 +71,35 @@ button:hover {
   background-color: #00adb5;
 }
 
-/* Project cards */
+/* Projects Section */
 .project {
-  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 10px;
   margin: 20px auto;
   padding: 20px;
   width: 60%;
-  border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-.project:hover {
-  transform: scale(1.03);
-  transition: 0.3s;
+.project img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
 }
 
 /* Contact form */
-form {
-  margin-top: 20px;
-}
-
 input, textarea {
   width: 80%;
   padding: 10px;
   margin: 10px;
-  border: 1px solid #ccc;
   border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Footer (optional) */
+footer {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #000;
+  color: white;
 }

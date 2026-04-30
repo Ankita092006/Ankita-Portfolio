@@ -15,7 +15,7 @@ function About() {
       {/* Education */}
       <h2>Education</h2>
       <p>
-        B.Tech in Information Technology (or your course name)
+        B.Tech in Information Technology 
       </p>
 
       {/* Skills */}

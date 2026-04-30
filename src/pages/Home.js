@@ -3,6 +3,18 @@ import profile from "../assets/profile.jpeg";
 function Home() {
   return (
     <div style={{ textAlign: "center", marginTop: "100px" }}>
+       <img 
+  src={profile} 
+  alt="profile"
+  style={{
+    width: "150px",
+    height: "150px",
+    borderRadius: "50%",
+    display: "block",
+    margin: "20px auto",
+    objectFit: "cover"
+  }}
+/>
       
       {/* Your Name */}
       <h1>Hi, I'm Ankita 👋</h1>
