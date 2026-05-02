@@ -85,6 +85,7 @@ button:hover {
   width: 100%;
   max-width: 300px;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 /* Contact form */
