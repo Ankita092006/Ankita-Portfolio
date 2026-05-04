@@ -1,39 +1,69 @@
 import React from "react";
+import profile from "../assets/profile.jpeg";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaGithub,
+  FaCode,
+  FaUser,
+  FaProjectDiagram,
+  FaBook,
+  FaBullseye
+} from "react-icons/fa";
 
 function About() {
   return (
-    <div style={{ padding: "40px" }}>
-      
-      <h1>About Me</h1>
+    <div className="about-container">
 
-      {/* Introduction */}
-      <p>
-        Hello! I'm Ankita, an Information Technology student passionate about 
-        web development and creating modern user-friendly websites.
-      </p>
+      <div className="about-card">
 
-      {/* Education */}
-      <h2>Education</h2>
-      <p>
-        B.Tech in Information Technology 
-      </p>
+        {/* LEFT SIDE */}
+        <div className="about-left">
+          <img src={profile} alt="profile" className="about-img" />
+        </div>
 
-      {/* Skills */}
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>C Programming</li>
-      </ul>
+        {/* RIGHT SIDE */}
+        <div className="about-right">
 
-      {/* Goal */}
-      <h2>Career Goal</h2>
-      <p>
-        I aim to become a skilled frontend developer and work on real-world
-        projects that solve problems.
-      </p>
+          {/* 👤 WHO I AM */}
+          <h2><FaUser /> Who I Am</h2>
+          <p className="about-text">
+            I am an enthusiastic Information Technology student passionate about 
+            building modern and responsive web applications using React and JavaScript.
+          </p>
+
+          {/* 💻 SKILLS */}
+          <h2><FaCode /> Skills</h2>
+          <div className="skills">
+            <span><FaHtml5 /> HTML5</span>
+            <span><FaCss3Alt /> CSS3</span>
+            <span><FaJs /> JavaScript</span>
+            <span><FaReact /> React.js</span>
+            <span><FaCode /> C Programming</span>
+            <span><FaGithub /> GitHub</span>
+          </div>
+
+         
+
+          {/* 📚 CURRENTLY LEARNING */}
+          <h2><FaBook /> Currently Learning</h2>
+          <p>
+            I am currently learning advanced React concepts and backend development 
+            to improve my full stack development skills.
+          </p>
+
+          {/* 🎯 GOAL */}
+          <h2><FaBullseye /> Career Goal</h2>
+          <p>
+            My goal is to become a skilled Full Stack Developer and build impactful 
+            real-world projects.
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
   );

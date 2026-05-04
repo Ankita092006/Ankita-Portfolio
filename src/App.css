@@ -3,25 +3,46 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #e3f2fd;
+
+  background: #9dc6a7;
+  color: rgb(1, 1, 14);
+
 }
 
 /* Navbar */
-nav {
-  background-color: #000;
-  padding: 15px;
-  text-align: center;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #799d82;
+  padding: 15px 30px;
 }
 
-nav a {
+/* Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
   color: white;
-  margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover {
-  color: #00adb5;
+/* CV Button */
+.cv-btn {
+  background-color: #00adb5;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cv-btn:hover {
+  background-color: #007b80;
 }
 
 /* Page container */
@@ -96,13 +117,99 @@ button:hover {
   margin: 0 auto;      /* center image */
 }
 
-/* Contact form */
-input, textarea {
-  width: 80%;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Contact info */
+.contact-info p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Social icons */
+.contact-social {
+  margin: 20px 0;
+  display: flex;              /* 👈 center properly */
+  justify-content: center;
+  gap: 20px;                 /* 👈 better than margin */
+}
+
+.contact-social a {
+  font-size: 25px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.contact-social a:hover {
+  color: #00adb5;
+  transform: scale(1.2);     /* 👈 smooth hover effect */
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* 👈 center form */
+  margin-top: 20px;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+  width: 80%;                /* 👈 better width */
+  max-width: 500px;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #0e0101;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #010e0e;
+}
+
+/* Button */
+.contact-form button {
+  background: #00adb5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #007b80;
+  transform: scale(1.05);
+
+}
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;          /* space between items */
+  flex-wrap: wrap;    /* responsive for mobile */
+  margin: 20px 0;
+}
+
+.contact-row span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  font-size: 16px;
+}
+
+.contact-row svg {
+  color: #00adb5;
 }
 
 /* Footer (optional) */
@@ -111,4 +218,101 @@ footer {
   padding: 15px;
   background-color: #000;
   color: white;
+}
+/* HOME PAGE CENTER */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+  height: 100vh;             /* full screen height */
+  text-align: center;
+}
+
+/* spacing between elements */
+.home-container > * {
+  margin: 10px 0;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;   /* 👈 THIS adds space between icons */
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #333;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00adb5;
+}
+/* ABOUT PAGE */
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Main Card */
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  max-width: 900px;
+  width: 100%;
+
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.about-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Right side */
+.about-right {
+  text-align: left;
+}
+
+/* About text */
+.about-text {
+  margin: 15px 0;
+  color: #555;
+}
+
+/* Skills */
+.skills {
+  margin-top: 10px;
+}
+
+.skills span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #00adb5;
+  color: white;
+
+  padding: 8px 12px;
+  margin: 6px;
+  border-radius: 20px;
+
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #007b80;
+  transform: scale(1.05);
 }

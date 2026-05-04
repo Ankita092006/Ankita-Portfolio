@@ -1,50 +1,50 @@
 import React from "react";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin
+} from "react-icons/fa";
 
 function Contact() {
   return (
-    <div style={{ padding: "40px", textAlign: "center" }}>
-      
+    <div className="contact-container">
+
       <h1>Contact Me</h1>
 
-      {/* Basic Info */}
-      <p>You can reach me through the following:</p>
+      {/* Contact Info */}
+      <div className="contact-info">
+      <div className="contact-row">
 
-      <p><b>Email:</b> sasmalankita09@gmail.com</p>
-      <p><b>Phone:</b> +91-9332695380</p>
+        <p><FaEnvelope /> sasmalankita09@gmail.com</p>
+        <p><FaPhone /> +91 9332695380</p>
+        <p><FaMapMarkerAlt /> West Bengal, India</p>
+
+      </div>
+</div>
+      {/* Social Links */}
+      <div className="contact-social">
+
+        <a href="https://github.com/Ankita092006" target="_blank" rel="noopener noreferrer">
+          <FaGithub />
+        </a>
+
+        <a href="https://linkedin.com/in/ankita-sasmal-792459376/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin />
+        </a>
+
+      </div>
 
       {/* Contact Form */}
-      <h2 style={{ marginTop: "30px" }}>Send Message</h2>
+      <form className="contact-form">
 
-      <form style={{ maxWidth: "400px", margin: "auto" }}>
-        <input
-          type="text"
-          placeholder="Your Name"
-          style={{ width: "100%", padding: "10px", margin: "10px 0" }}
-        />
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
 
-        <input
-          type="email"
-          placeholder="Your Email"
-          style={{ width: "100%", padding: "10px", margin: "10px 0" }}
-        />
+        <button type="submit">Send Message</button>
 
-        <textarea
-          placeholder="Your Message"
-          style={{ width: "100%", padding: "10px", margin: "10px 0" }}
-        ></textarea>
-
-        <button
-          type="submit"
-          style={{
-            padding: "10px 20px",
-            backgroundColor: "black",
-            color: "white",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          Send Message
-        </button>
       </form>
 
     </div>
